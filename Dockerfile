@@ -7,6 +7,7 @@ RUN apt-get update
 RUN apt-get install -y mongodb
 
 #ENTRYPOINT ["/usr/local/bin/forever", "start", "/docbot/docbot.js"]
+#test
 ENTRYPOINT /usr/local/bin/forever start /docbot/docbot.js && /bin/bash
 #ENTRYPOINT /usr/local/bin/forever start /docbot/docbot.js
 
